@@ -1,0 +1,50 @@
+{
+  "name": "3dfolio",
+  "version": "0.0.0",
+  "private": true,
+  "description": "<div align=\"center\">   <br />     <a href=\"https://youtu.be/0fYi8SGA20k?feature=shared\" target=\"_blank\">       <img src=\"https://github.com/adrianhajdin/project_3D_developer_portfolio/assets/151519281/4722160a-8e61-403f-a905-728feae1f7e6\" alt=\"Project Banner\">     </a>   <br />",
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "vite.config.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^3.10.0",
+    "@react-three/drei": "^9.56.24",
+    "@react-three/fiber": "^8.11.1",
+    "framer-motion": "^9.0.7",
+    "maath": "^0.5.2",
+    "react": "^18.2.0",
+    "react-router-dom": "^6.8.1",
+    "react-tilt": "^0.1.4",
+    "react-vertical-timeline-component": "^3.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10",
+    "@vitejs/plugin-react": "^3.1.0",
+    "autoprefixer": "^10.4.13",
+    "expo": "^52.0.39",
+    "expo-asset": "^11.0.4",
+    "expo-file-system": "^18.0.11",
+    "expo-gl": "^15.0.4",
+    "immer": "^10.1.1",
+    "less": "^4.2.2",
+    "lightningcss": "^1.29.3",
+    "postcss": "^8.4.21",
+    "react-dom": "^18.3.1",
+    "react-native": "^0.78.1",
+    "sass": "^1.86.0",
+    "stylus": "^0.64.0",
+    "tailwindcss": "^3.2.6",
+    "terser": "^5.39.0",
+    "three": "^0.149.0",
+    "ts-node": "^10.9.2",
+    "vite": "^6.2.2"
+  }
+}
