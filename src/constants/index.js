@@ -35,13 +35,14 @@ export const navLinks = [
     title: "About",
   },
   {
-    id: "experience",
-    title: "Work",
-  },
-  {
     id: "projects",
     title: "Projects",
   },
+  {
+    id: "experience",
+    title: "Work",
+  },
+  
   {
     id: "contact",
     title: "Contact",
@@ -58,7 +59,7 @@ const services = [
     icon: mobile,
   },
   {
-    title: "Endless WordPress",
+    title: "Headless WordPress",
     icon: backend,
   },
   {
@@ -159,17 +160,17 @@ const experiences = [
 const testimonials = [
   {
     testimonial: "Great communication and excellent problem-solving skills. Highly recommended!",
-    name: "Hassan Ali",
+    name: "David",
     image: "https://shorturl.at/5l8s7",
   },
   {
     testimonial: "Highly skilled professional developer. My website runs perfectly now!",
-    name: "Hussain",
+    name: "John",
     image: "https://shorturl.at/5l8s7",
   },
   {
-    testimonial: "Excellent work delivered on time with great attention to detail.",
-    name: "Saba Alam",
+    testimonial: "Excellent work delivered on time with great attention to detail and professionalism.",
+    name: "Paul",
     image: "https://shorturl.at/5l8s7",
   },
 ];

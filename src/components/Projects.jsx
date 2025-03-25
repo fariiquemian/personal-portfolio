@@ -14,45 +14,50 @@ const ProjectCard = ({
   description,
   tags,
   image,
-  source_code_link, // Add this prop
+  source_code_link,
 }) => {
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    <motion.div variants={fadeIn("up", "spring", index * 0.5, 2)}>
       <a href={source_code_link} target="_blank" rel="noopener noreferrer">
-        <Tilt
-          options={{
-            max: 45,
-            scale: 1,
-            speed: 450,
-          }}
-          className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full cursor-pointer"
+        <motion.div
+          whileHover={{ scale: 1.05 }}  // Scale the entire card
+          transition={{ type: "spring", stiffness: 100, damping: 10 }}
+          className="sm:w-[360px] w-full"
         >
-          <div className="relative w-full h-[230px]">
-            <img
-              src={image}
-              alt={name}
-              className="w-full h-full object-cover rounded-2xl"
-            />
-          </div>
+          <Tilt
+            options={{
+              max: 15,  // Reduced tilt intensity for smoother animation
+              scale: 1,  // Remove internal scaling
+              speed: 300,  // Reduced speed for a smoother effect
+            }}
+            className="bg-tertiary p-5 rounded-2xl w-full cursor-pointer"
+          >
+            <div className="relative w-full h-[230px]">
+              <img
+                src={image}
+                alt={name}
+                className="w-full h-full object-cover rounded-2xl"
+              />
+            </div>
 
-          <div className="mt-5">
-            <h3 className="text-white font-bold text-[24px]">{name}</h3>
-            <p className="mt-2 text-secondary text-[14px]">{description}</p>
-          </div>
+            <div className="mt-5">
+              <h3 className="text-white font-bold text-[24px]">{name}</h3>
+              <p className="mt-2 text-secondary text-[14px]">{description}</p>
+            </div>
 
-          <div className="mt-4 flex flex-wrap gap-2">
-            {tags.map((tag) => (
-              <p key={`${name}-${tag.name}`} className={`text-[14px] ${tag.color}`}>
-                #{tag.name}
-              </p>
-            ))}
-          </div>
-        </Tilt>
+            <div className="mt-4 flex flex-wrap gap-2">
+              {tags.map((tag) => (
+                <p key={`${name}-${tag.name}`} className={`text-[14px] ${tag.color}`}>
+                  #{tag.name}
+                </p>
+              ))}
+            </div>
+          </Tilt>
+        </motion.div>
       </a>
     </motion.div>
   );
 };
-
 
 const Projects = () => {
   return (
