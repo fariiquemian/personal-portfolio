@@ -1,8 +1,12 @@
 import {
-  mobile,
-  backend,
-  creator,
-  web,
+
+
+
+  customization1,
+  development1,
+  headless1,
+  php1,
+
   javascript,
   typescript,
   html,
@@ -52,19 +56,19 @@ export const navLinks = [
 const services = [
   {
     title: "WordPress Customization",
-    icon: web,
+    icon: customization1,
   },
   {
     title: "WordPress Development",
-    icon: mobile,
+    icon: development1,
   },
   {
     title: "Headless WordPress",
-    icon: backend,
+    icon: headless1,
   },
   {
     title: "PHP Development",
-    icon: creator,
+    icon: php1,
   },
 ];
 

@@ -1,11 +1,16 @@
 import logo from "./logo.png";
-import backend from "./backend.png";
-import creator from "./creator.png";
-import mobile from "./mobile.png";
-import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
+
+
+
+
+
+import customization1 from "./customization2.png";
+import development1 from "./development2.png";
+import headless1 from "./headless2.png";
+import php1 from "./php2.png";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -36,10 +41,15 @@ import t5group from "./t5group.png";
 
 export {
   logo,
-  backend,
-  creator,
-  mobile,
-  web,
+
+  
+
+
+  customization1,
+  development1,
+  headless1,
+  php1,
+
   github,
   menu,
   close,
